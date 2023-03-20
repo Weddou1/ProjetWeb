@@ -1,0 +1,171 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+
+.rounded{
+  border-radius: var(--border-radius);
+
+}
+
+
+
+:root{
+  --nav-padding:0.25em;
+  --border-radius: 20px;
+  --second-color:#ff450c;
+  --primary-color:#ffbf2d;
+  --black-color:#151516;
+
+  --font-weight-large:900;
+  --font-size-large:1.5em;
+
+  background-color: var(--primary-color);
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  
+
+}
+
+:root::-webkit-scrollbar{
+  display: none
+}
+
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+a, a:hover,a:visited,a:active,a:focus{
+  text-decoration: none;
+}
+
+
+nav{
+  font-size: 1em;
+  background-color: white;
+  padding-top: var(--nav-padding);
+  padding-bottom: var(--nav-padding);
+
+  margin: 2%;
+
+  box-shadow: 0px 1vh 0px 0px var(--black-color);
+
+
+  font-size: 5em;
+  
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  gap: 10%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-weight: 800;
+}
+
+ul > div:nth-child(1){
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+  
+
+}
+
+
+ul > div > li{
+  
+  text-align: center;
+  width: 10vw;
+  height: 3vh;
+  font-size: 1vw;
+
+
+  
+}
+
+ul > div > li > a{
+  color: var(--black-color);
+
+  padding: -10px;
+  font-size: var(--font-size-large);
+  font-weight: 1000;
+
+  
+}
+
+
+a {
+  position: relative;
+}
+
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+
+
+ul > div:nth-child(2){
+  margin-right: 5%;
+
+  
+
+}
+
+ul > div:nth-child(2) > li{ 
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+
+  background-color: var(--second-color);
+  color: white;
+
+  padding: calc(var(--font-size-large) / 2);
+
+
+  border-radius: calc( 30px - var(--border-radius));
+
+  box-shadow: 0 0 0 0 var(--black-color);
+  transition: all 0.3s ease;
+
+}
+
+
+
+
+ul > div:nth-child(2) > li:hover{
+  box-shadow: 5px 5px 0px 0px var(--black-color);
+}
+
+.command {
+  color: white;
+
+}
