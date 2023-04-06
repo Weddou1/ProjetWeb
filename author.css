@@ -1,0 +1,118 @@
+main{
+    background-color: white;
+    margin: 2%;
+
+
+    min-height: 80vh;
+
+    box-shadow: 0px 1vh 0px 0px var(--black-color);
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+hr {
+    width: 100%;
+    border-top: 6px dashed var(--second-color);
+  }
+
+main > div {
+    margin-left: 2%;
+}
+
+main > div:nth-child(1){
+    align-self: center;
+    font-weight: var(--font-weight-large);
+    font-size: 2em;
+    margin-top: 1%;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+article > div > section, article > div > aside {
+    transition: all 0.3s ease;
+}
+
+
+article > div > section:hover, article > div > aside:hover{
+    box-shadow: 5px 5px 0px 0px var(--black-color);
+    cursor: pointer;
+}
+
+article > div > section:nth-child(even){
+    background-color: rgb(248, 156, 51);
+}
+
+article > div > section:nth-child(odd){
+    background-color: rgb(253, 193, 114);
+}
+
+
+
+article > div:nth-child(2){
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+
+article > div:nth-child(2) > aside {
+    background-color: rgb(223, 223, 223);
+    height:fit-content;
+    border-radius: var(--border-radius);
+    margin-bottom: 2vh;
+
+}
+
+article > div:nth-child(2) > aside > p {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    margin-right: 1%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    line-height: 1.1em;
+    
+}
+
+
+
+
+
+article > div:nth-child(1){
+    width: 70%;
+    line-height: 1.2em;
+
+}
+
+article > div > section {
+    height:fit-content;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article > div > section > p {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+article > div > section > div {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    font-weight: 700;
+}
+
+

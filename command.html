@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COMMANDER | VENTE DE VÊTEMENTS GEEK EN LIGNE</title>
+    <link rel="icon" type="image/x-icon" href="/img/Nyan-Cat-PNG-HD.png">
+    <link rel="stylesheet" href="./nav.css">
+    <link rel="stylesheet" href="./command.css">
+</head>
+<body>
+
+    <nav class="rounded">
+        <ul>
+          <div>
+            <li>
+              <a href="./index.html">
+              Acceuil
+              </a>
+            </li>
+            <li>
+              <a href="./author.html">
+                Articles
+                </a>
+            </li>
+            <li>
+              <a href="./shop.html">
+                Shop
+                </a>
+            </li>
+          </div>
+          <div>
+            <li>
+              <a href="./command.html" class="command"> 
+              Commander
+              </a>
+            </li>
+          </div>
+        </ul>
+    </nav>
+
+
+    <main>
+    <div class="container">
+        <form action="">
+                <header>COMMANDEZ !</header>
+                <div class="question-row-container">
+                    <div class="question-container">
+                        <input type="text" placeholder=" " required>
+                        <span>PRENOM</span>
+                    </div>
+
+
+                    <div class="question-container">
+                        <input type="text" required>
+                        <span >NOM</span>
+
+
+                    </div>
+                </div>
+
+                <div class="question-row-container">
+                    <div class="question-container">
+                        
+                        <input type="tel" maxlength="8" minlength="8" pattern="[0-9]{8}$" title="Veuillez entrer un numéro valide (8 Chiffres)" required>
+                        <span >NUMERO TEL</span>
+                    </div>
+
+                    <div class="question-container">
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Example Adresse valide : Exemple10@Exemple.fr" required>
+                        <span >ADRESSE MAIL</span>
+                    </div>
+
+                    
+                </div>
+
+                <div class="question-row-container">
+                    <div class="question-container">
+
+                        
+                        <input type="tel" title="Sous format 0001" minlength="4" maxlength="4" pattern="[0-9]{4}$" required>
+                        <span >ID DU PRODUIT (FORMAT 0001)</span>
+                        <div>
+                    </div>
+                </div>
+
+
+                <div class="question-row-container">
+                    <div class="question-container options" >
+
+
+                        <input type="radio" id="liquide" name="moy_paiement" value="LIQUIDE" required>
+                        <label for="liquide">Liquide</label>
+                        <input type="radio" id="cheque" name="moy_paiement" value="CSS">
+                        <label for="cheque">Chèque</label>
+                        <input type="radio" id="mastercard" name="moy_paiement" value="MASTERCARD">
+                        <label for="mastercard">Mastercard</label>
+
+
+                        <div>
+                            <label for="size-select">Choisir une taille:</label>
+
+                            <select name="taille" id="size-select" required>
+                                <option value="">None</option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                            </select>
+                        </div>
+                    </div>
+
+                        
+                    </div>
+
+                    
+                </div>
+
+
+                <div class="question-row-container">
+                    <div class="question-container">
+                        <input type="submit" class="send-btn">
+
+                        
+                    </div>
+
+                    
+                </div>
+
+
+
+
+                
+
+        </form>
+    </div>
+    </main>
+
+    
+</body>
+</html>
